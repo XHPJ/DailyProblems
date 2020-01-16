@@ -2,8 +2,10 @@ package main
 
 import "fmt"
 
-//solution without division to be  preferred  due to  the need of  special treatment
+//solution without division :  no need of  special treatment
 //for the case of an element being 0
+//downside: runntime O(nˆ2)
+
 func ProductWithoutDivision(array []int) []int {
 	var result = make([]int, len(array))
 
