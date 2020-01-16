@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 //solution without division :  no need of  special treatment
 //for the case of an element being 0
 //downside: runntime O(nˆ2)
@@ -27,8 +25,7 @@ func ProductWithoutDivision(array []int) []int {
 
 
  */
-func main() {
-	numbers := []int{0, 2, 3, 4, 5, 6, 0, 8, 9}
-	// num := []int{1, 2, 3}
-	fmt.Println(ProductWithoutDivision(numbers))
-}
+// func main() {
+// 	numbers := []int{0, 2, 3, 4, 5, 6, 0, 8, 9}
+// 	fmt.Println(ProductWithoutDivision(numbers))
+// }
