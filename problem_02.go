@@ -1,13 +1,38 @@
 package main
 
-//solution without division :  no need of  special treatment
-//for the case of an element being 0
+import "fmt"
+
+/*
+Task: 	Given an array of integers, return a new array such that each element at index
+		i of the new array is the product of all the numbers in the original array except the one at i.
+**/
+
+//solution without division :  no need of  special treatment for the case of an element being 0
 //downside: runntime O(nˆ2)
-
 func ProductWithoutDivision(array []int) []int {
-	var result = make([]int, len(array))
+	result := make([]int, len(array))
+	zeroIndex := 0
 
-	for index, _ := range array {
+	/**
+	This first loop  checks for a zero, in this case every other element with index != zeroIndex
+	will be zero and we get a linear runtime
+	*/
+	for index, elem := range array {
+		if elem == 0 {
+			zeroIndex = index
+			zeroIndexValue := 1
+
+			for innerIndex, innerElem := range array {
+				if innerIndex != zeroIndex {
+					zeroIndexValue *= innerElem
+				}
+			}
+			result[zeroIndex] = zeroIndexValue
+			return result
+		}
+	}
+
+	for index := range array {
 		tmp := 1
 		for innerIndex, elem := range array {
 			if innerIndex != index {
@@ -21,11 +46,7 @@ func ProductWithoutDivision(array []int) []int {
 	return result
 }
 
-/**
-
-
- */
-// func main() {
-// 	numbers := []int{0, 2, 3, 4, 5, 6, 0, 8, 9}
-// 	fmt.Println(ProductWithoutDivision(numbers))
-// }
+func main() {
+	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	fmt.Println(ProductWithoutDivision(numbers))
+}
