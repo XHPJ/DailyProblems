@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
 Task: 	Given an array of integers, return a new array such that each element at index
 		i of the new array is the product of all the numbers in the original array except the one at i.
@@ -46,7 +44,7 @@ func ProductWithoutDivision(array []int) []int {
 	return result
 }
 
-func main() {
-	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	fmt.Println(ProductWithoutDivision(numbers))
-}
+// func main() {
+// 	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+// 	fmt.Println(ProductWithoutDivision(numbers))
+// }
