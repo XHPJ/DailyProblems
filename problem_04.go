@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 const (
 	MaxUint = ^uint(0)
 	MaxInt  = int(MaxUint >> 1)
@@ -34,8 +32,8 @@ func FirstMissingPositive(array []int) int {
 	return missing
 }
 
-func main() {
-	numbers := []int{3, 4, -1, 1}
+// func main() {
+// 	numbers := []int{3, 4, -1, 1}
 
-	fmt.Println(FirstMissingPositive(numbers))
-}
+// 	fmt.Println(FirstMissingPositive(numbers))
+// }
