@@ -19,6 +19,7 @@ func FirstMissingPositive(array []int) int {
 
 	for _, elem := range array {
 		if elem < min && elem >= 1 {
+			//in case that the delta is larger than 1 then there is a larger gap then just one
 			if (min-elem) > 1 && missing != elem {
 				missing = elem + 1
 			}
@@ -26,6 +27,9 @@ func FirstMissingPositive(array []int) int {
 		} else if min+1 == elem {
 			missing = elem + 1
 		}
+	}
+	if min > 1 && min > missing {
+		return min - 1
 	}
 	return missing
 }
