@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
 cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair.
 For example, car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4.
@@ -40,10 +38,10 @@ func (pair *Pair) Second() int {
 	return pair.second
 }
 
-func main() {
-	duo := &Pair{first: 4, second: 2}
+// func main() {
+// 	duo := &Pair{first: 4, second: 2}
 
-	fmt.Println(duo.First())
-	fmt.Println(duo.Second())
-	fmt.Println(duo.First(), duo.Second())
-}
+// 	fmt.Println(duo.First())
+// 	fmt.Println(duo.Second())
+// 	fmt.Println(duo.First(), duo.Second())
+// }
