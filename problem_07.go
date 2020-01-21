@@ -13,13 +13,15 @@ TASK:		Given the mapping a = 1, b = 2, ... z = 26, and an encoded message,
 **/
 
 func NumOfPossibleDecodes(input string) int {
-
+	//convert  input string into a number and check for error
 	num, err := strconv.Atoi(input)
 	middle := len(input) / 2
 
 	if err != nil {
 		panic("Invalid input")
 	}
+	// check recursivly if the substring (always in half) can be split up
+	// into  smaller numbers until we have a num < 10
 	if num == 0 {
 		return 0
 	} else if num > 0 && num < 10 {
