@@ -67,5 +67,6 @@ func (node *Node) printNode(side string) {
 // 	tree.insert(1)
 // 	tree.insert(6)
 
+// 	fmt.Println(tree.root.left)
 // 	tree.printTree()
 // }

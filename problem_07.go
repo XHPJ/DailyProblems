@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -33,8 +32,8 @@ func NumOfPossibleDecodes(input string) int {
 	}
 }
 
-func main() {
-	fmt.Println(NumOfPossibleDecodes("111"))
-	fmt.Println(NumOfPossibleDecodes("25710"))
-	fmt.Println(NumOfPossibleDecodes("2571"))
-}
+// func main() {
+// 	fmt.Println(NumOfPossibleDecodes("111"))
+// 	fmt.Println(NumOfPossibleDecodes("25710"))
+// 	fmt.Println(NumOfPossibleDecodes("2571"))
+// }
