@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
 Task: 		A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value.
 			Given the root to a binary tree, count the number of unival subtrees.
@@ -64,15 +62,15 @@ func CountUivalTrees(tree *BinaryTree) int {
 	return count
 }
 
-func main() {
-	//same tree as in the example above
-	tree := BinaryTree{value: 0, left: nil, right: nil}
-	tree.SetLeft(1)
-	tree.SetRight(0)
-	tree.right.SetLeft(1)
-	tree.right.SetRight(0)
-	tree.right.left.SetLeft(1)
-	tree.right.left.SetRight(1)
+// func main() {
+// 	//same tree as in the example above
+// 	tree := BinaryTree{value: 0, left: nil, right: nil}
+// 	tree.SetLeft(1)
+// 	tree.SetRight(0)
+// 	tree.right.SetLeft(1)
+// 	tree.right.SetRight(0)
+// 	tree.right.left.SetLeft(1)
+// 	tree.right.left.SetRight(1)
 
-	fmt.Println(CountUivalTrees(&tree))
-}
+// 	fmt.Println(CountUivalTrees(&tree))
+// }
