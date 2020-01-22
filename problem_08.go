@@ -35,7 +35,7 @@ func (tree *BinaryTree) SetRight(value int) *BinaryTree {
 }
 
 func CountUivalTrees(tree *BinaryTree) int {
-	//In case we reached the last node return the acc
+	//In case we reached the last node return 0 or 1
 	if tree == nil {
 		return 0
 	}
@@ -44,7 +44,7 @@ func CountUivalTrees(tree *BinaryTree) int {
 	}
 
 	count := 0
-	//in case of matching values the amount of unival trees equals the sum of the acc
+	//in case of matching values the amount of unival trees equals the sum of steps
 	if tree.left != nil && tree.right == nil {
 		if tree.left.value == tree.value {
 			count += 1 + CountUivalTrees(tree.left)
