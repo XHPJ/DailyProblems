@@ -34,26 +34,32 @@ func (tree *BinaryTree) SetRight(value int) *BinaryTree {
 	return tree
 }
 
-func CountUivalTrees(tree *BinaryTree, acc int) int {
+func CountUivalTrees(tree *BinaryTree) int {
 	//In case we reached the last node return the acc
+	if tree == nil {
+		return 0
+	}
 	if tree.left == nil && tree.right == nil {
-		return acc
+		return 1
 	}
 
 	count := 0
 	//in case of matching values the amount of unival trees equals the sum of the acc
-	if tree.left != nil && tree.left.value == tree.value {
-		count += CountUivalTrees(tree.left, acc+1)
+	if tree.left != nil && tree.right == nil {
+		if tree.left.value == tree.value {
+			count += 1 + CountUivalTrees(tree.left)
+		}
 	}
-	if tree.right != nil && tree.right.value == tree.value {
-		count += CountUivalTrees(tree.right, acc+1)
+	if tree.right != nil && tree.left == nil {
+		if tree.right.value == tree.value {
+			count += 1 + CountUivalTrees(tree.right)
+		}
 	}
-	//if the values do not match then reset the acc=0
-	if tree.left != nil {
-		count += CountUivalTrees(tree.left, 0)
+	if tree.right != nil && tree.left != nil {
+		count += CountUivalTrees(tree.right) + CountUivalTrees(tree.left)
 	}
-	if tree.right != nil {
-		count += CountUivalTrees(tree.right, 0)
+	if tree.value == tree.left.value && tree.left.value == tree.value {
+		count++
 	}
 	return count
 }
@@ -66,7 +72,7 @@ func main() {
 	tree.right.SetLeft(1)
 	tree.right.SetRight(0)
 	tree.right.left.SetLeft(1)
-	tree.right.left.SetLeft(1)
+	tree.right.left.SetRight(1)
 
-	fmt.Println(CountUivalTrees(&tree, 0))
+	fmt.Println(CountUivalTrees(&tree))
 }
