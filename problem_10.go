@@ -27,6 +27,6 @@ func FunctionScheduler(f func(), n int) {
 	}
 }
 
-func main() {
-	FunctionScheduler(SaySomething, 4500)
-}
+// func main() {
+// 	FunctionScheduler(SaySomething, 4500)
+// }
