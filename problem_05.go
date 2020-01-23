@@ -37,11 +37,3 @@ func (pair *Pair) SetSecond(newSecond int) {
 func (pair *Pair) Second() int {
 	return pair.second
 }
-
-// func main() {
-// 	duo := &Pair{first: 4, second: 2}
-
-// 	fmt.Println(duo.First())
-// 	fmt.Println(duo.Second())
-// 	fmt.Println(duo.First(), duo.Second())
-// }

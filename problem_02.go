@@ -41,8 +41,3 @@ func ProductWithoutDivision(array []int) []int {
 
 	return result
 }
-
-// func main() {
-// 	numbers := []int{1, 2, 3, 4, 5}
-// 	fmt.Println(ProductWithoutDivision(numbers))
-// }

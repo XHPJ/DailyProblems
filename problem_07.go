@@ -31,9 +31,3 @@ func NumOfPossibleDecodes(input string) int {
 		return NumOfPossibleDecodes(input[0:middle]) + NumOfPossibleDecodes(input[middle:len(input)])
 	}
 }
-
-// func main() {
-// 	fmt.Println(NumOfPossibleDecodes("111"))
-// 	fmt.Println(NumOfPossibleDecodes("25710"))
-// 	fmt.Println(NumOfPossibleDecodes("2571"))
-// }

@@ -26,7 +26,3 @@ func FunctionScheduler(f func(), n int) {
 		fmt.Println("timeout")
 	}
 }
-
-// func main() {
-// 	FunctionScheduler(SaySomething, 4500)
-// }

@@ -55,18 +55,3 @@ func (node *Node) printNode(side string) {
 		node.right.printNode("r")
 	}
 }
-
-// func main() {
-
-// 	tree := &Tree{}
-// 	tree.printTree()
-// 	tree.insert(3)
-// 	tree.insert(2)
-// 	tree.insert(5)
-// 	tree.insert(4)
-// 	tree.insert(1)
-// 	tree.insert(6)
-
-// 	fmt.Println(tree.root.left)
-// 	tree.printTree()
-// }

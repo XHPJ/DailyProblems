@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -22,12 +21,6 @@ func PreSelection(dic []string, prefix string) []string {
 		}
 	}
 	return output
-}
-
-func main() {
-	dictionary := []string{"dog", "deer", "deal"}
-	predix := "de"
-	fmt.Println(PreSelection(dictionary, predix))
 }
 
 //custom function

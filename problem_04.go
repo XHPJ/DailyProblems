@@ -31,9 +31,3 @@ func FirstMissingPositive(array []int) int {
 	}
 	return missing
 }
-
-// func main() {
-// 	numbers := []int{3, 4, -1, 1}
-
-// 	fmt.Println(FirstMissingPositive(numbers))
-// }
