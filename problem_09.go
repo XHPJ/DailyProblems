@@ -2,8 +2,6 @@ package main
 
 import "math"
 
-import "fmt"
-
 /*
 Task: 		Given a list of integers, write a function that returns the largest sum of non-adjacent numbers.
 			Numbers can be 0 or negative. For example, [2, 4, 6, 8] should return 12, since we pick 4 and 8.
@@ -32,9 +30,9 @@ func LargestSumOfNonAdj(values []int) int {
 	return firstMax + secondMax
 }
 
-func main() {
-	numbers := []int{2, 4, 6, 8}
-	numbers2 := []int{5, 1, 1, 5}
-	fmt.Println(LargestSumOfNonAdj(numbers))
-	fmt.Println(LargestSumOfNonAdj(numbers2))
-}
+// func main() {
+// 	numbers := []int{2, 4, 6, 8}
+// 	numbers2 := []int{5, 1, 1, 5}
+// 	fmt.Println(LargestSumOfNonAdj(numbers))
+// 	fmt.Println(LargestSumOfNonAdj(numbers2))
+// }
