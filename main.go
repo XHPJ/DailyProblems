@@ -1,9 +1,6 @@
 package main
 
-import "fmt"
-
 func main() {
-
 	//Problem 7
 	// fmt.Println(NumOfPossibleDecodes("111"))
 	// 	fmt.Println(NumOfPossibleDecodes("25710"))
@@ -29,7 +26,10 @@ func main() {
 	//	FunctionScheduler(SaySomething, 4500)
 
 	//Problem 11
-	dictionary := []string{"dog", "deer", "deal"}
-	predix := "de"
-	fmt.Println(PreSelection(dictionary, predix))
+	// dictionary := []string{"dog", "deer", "deal"}
+	// predix := "de"
+	// fmt.Println(PreSelection(dictionary, predix))
+
+	//Problem 12
+	// fmt.Println(NumberOfPossibleSteps(6))
 }

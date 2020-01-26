@@ -14,7 +14,6 @@ this is actually not the way you would do that in golang
 **/
 
 // here an example of getters and setters in golang
-
 type Pair struct {
 	first  int
 	second int
