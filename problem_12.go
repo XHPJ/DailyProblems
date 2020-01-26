@@ -42,7 +42,7 @@ func NumberOfStairsBySet(n int, possibleSteps []int) [][]int {
 }
 
 func min(list []int) int {
-	min := 10000000000
+	min := MaxInt
 	for _, elem := range list {
 		if elem < min {
 			min = elem
