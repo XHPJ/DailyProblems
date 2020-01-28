@@ -32,4 +32,7 @@ func main() {
 
 	//Problem 12
 	// fmt.Println(NumberOfPossibleSteps(6))
+
+	//Problem 13
+	LongestSubstring(2, "abdbjfsbjsdlajfld")
 }

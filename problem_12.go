@@ -19,7 +19,7 @@ func NumberOfPossibleSteps(n int) int {
 //Note: I assume that the set is ordered and if the steps a higher than the stairs
 //there is no possibility
 func NumberOfStairsBySet(n int, possibleSteps []int) [][]int {
-	combos := [][]int{}
+	combos := make([][]int, 0)
 	if n < min(possibleSteps) {
 		return combos
 	}
