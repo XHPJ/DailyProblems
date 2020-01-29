@@ -34,5 +34,8 @@ func main() {
 	// fmt.Println(NumberOfPossibleSteps(6))
 
 	//Problem 13
-	LongestSubstring(2, "abdbjfsbjsdlajfld")
+	// LongestSubstring(2, "abdbjfsbjsdlajfld")
+
+	//Problem 15
+	RandomUniformSelection()
 }

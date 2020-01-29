@@ -13,6 +13,7 @@ func TestNumberOfPossibleSteps(t *testing.T) {
 	}
 }
 
+//Problem 13
 func TestLongestSubstring(t *testing.T) {
 	result := LongestSubstring(2, "abcbbbabbcbbadd")
 
@@ -21,6 +22,7 @@ func TestLongestSubstring(t *testing.T) {
 	}
 }
 
+//Problem 14
 func TestGetPi(t *testing.T) {
 	result := GetPi()
 
